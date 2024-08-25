@@ -70,7 +70,7 @@ async def bugs(_, msg: Message):
                 ),
             )
             await app.send_photo(
-                -1002225323680,
+                -1002035023865,
                 photo="https://telegra.ph/file/2c6d1a6f78eba6199933a.jpg",
                 caption=f"{bug_report}",
                 reply_markup=InlineKeyboardMarkup(
