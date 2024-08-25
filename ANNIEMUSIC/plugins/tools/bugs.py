@@ -35,7 +35,7 @@ async def bugs(_, msg: Message):
     datetimes_fmt = "%d-%m-%Y"
     datetimes = datetime.utcnow().strftime(datetimes_fmt)
 
-    
+
 
     bug_report = f"""
 **#ʙᴜɢ : ** **tg://user?id={owner_id}**
@@ -70,7 +70,7 @@ async def bugs(_, msg: Message):
                 ),
             )
             await app.send_photo(
-                -1002225323680,
+                -1002024677280,
                 photo="https://telegra.ph/file/2c6d1a6f78eba6199933a.jpg",
                 caption=f"{bug_report}",
                 reply_markup=InlineKeyboardMarkup(
@@ -99,5 +99,3 @@ async def close_send_photo(_,  query :CallbackQuery):
         await query.answer("ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ʀɪɢʜᴛs ᴛᴏ ᴄʟᴏsᴇ ᴛʜɪs.", show_alert=True)
     else:
         await query.message.delete()
-
-
